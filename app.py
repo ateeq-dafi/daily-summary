@@ -103,12 +103,6 @@ def main():
     st.title("Task Summary Generator (Case-based Format)")
     st.write("Enter your tasks for today and tomorrow to generate a formatted case-based summary.")
 
-    # Check if API Key is set
-    if not api_key:
-        st.error("OpenAI API key is missing. Please set it in your .env file.")
-        return
-    openai.api_key = api_key
-
     # Project Name(s)
     project_name = st.text_input("Project Name(s) (e.g., CrowdGen AI, Emp Radar)", value="CrowdGen AI, Emp Radar")
 
