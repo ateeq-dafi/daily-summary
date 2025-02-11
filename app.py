@@ -93,8 +93,7 @@ Ensure the response is clear and follows the format.
 
 # Streamlit UI
 def main():
-    st.title("Task Summary Generator (Case-based Format)")
-    st.write("Enter your tasks for today and tomorrow to generate a formatted summary.")
+    st.title("Daily Summary Generator")
 
     project_name = st.text_input("Project Name(s)", value="CrowdGen AI, Emp Radar")
     today_tasks = st.text_area("Tasks for Today", height=150)
