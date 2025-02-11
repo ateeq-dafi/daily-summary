@@ -1,13 +1,11 @@
 import streamlit as st
-import openai, os
-from dotenv import load_dotenv
-load_dotenv()
+import openai
 
 from openai import OpenAI
 client = OpenAI()
 
 # Load API Key from environment variables
-api_key = os.getenv('ATEEQ_OPENAI_API_KEY')
+api_key = st.secrets["ATEEQ_OPENAI_API_KEY"]
 
 # Function to generate a structured task summary
 def generate_summary(case_number, today_tasks, tomorrow_tasks, project_name):
