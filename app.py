@@ -91,6 +91,10 @@ Ensure the response is clear and follows the format.
     
     return response.choices[0].message.content
 
+st.set_page_config(
+        page_title="Daily Summary Generator",
+)
+
 # Streamlit UI
 def main():
     st.title("Daily Summary Generator")
