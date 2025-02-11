@@ -95,14 +95,34 @@ Ensure the response is clear and follows the format.
 def main():
     st.title("Daily Summary Generator")
 
+    # Character limits
+    PROJECT_NAME_LIMIT = 50
+    TASKS_LIMIT = 600
+
+    # Input fields with validation
     project_name = st.text_input("Project Name(s)", value="CrowdGen AI, Emp Radar")
+    if len(project_name) > PROJECT_NAME_LIMIT:
+        st.error(f"Project Name should be at most {PROJECT_NAME_LIMIT} characters. Current length: {len(project_name)}")
+
     today_tasks = st.text_area("Tasks for Today", height=150)
+    if len(today_tasks) > TASKS_LIMIT:
+        st.error(f"Tasks for Today should be at most {TASKS_LIMIT} characters. Current length: {len(today_tasks)}")
+
     tomorrow_tasks = st.text_area("Tasks for Tomorrow", height=150)
+    if len(tomorrow_tasks) > TASKS_LIMIT:
+        st.error(f"Tasks for Tomorrow should be at most {TASKS_LIMIT} characters. Current length: {len(tomorrow_tasks)}")
 
     case_number = 7  # You can make this dynamic
 
     if st.button("Generate Report"):
-        if not today_tasks.strip() or not tomorrow_tasks.strip():
+        # Validate character length before processing
+        if (
+            len(project_name) > PROJECT_NAME_LIMIT or
+            len(today_tasks) > TASKS_LIMIT or
+            len(tomorrow_tasks) > TASKS_LIMIT
+        ):
+            st.error("Please ensure all inputs are within the character limits.")
+        elif not today_tasks.strip() or not tomorrow_tasks.strip():
             st.error("Please provide tasks for both today and tomorrow.")
         else:
             with st.spinner("Generating report..."):
