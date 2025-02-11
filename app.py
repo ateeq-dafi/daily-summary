@@ -1,18 +1,14 @@
 import streamlit as st
 import openai
 
-from openai import OpenAI
-client = OpenAI()
-
-# Get the API key from Streamlit secrets
+# Load API key from Streamlit secrets
 api_key = st.secrets["openai"]["api_key"]
 
-# Initialize OpenAI client
-client = OpenAI(api_key=api_key)
+# Initialize OpenAI client correctly
+client = openai.OpenAI(api_key=api_key)
 
-# Function to generate a structured task summary
+# Function to generate structured task summary
 def generate_summary(case_number, today_tasks, tomorrow_tasks, project_name):
-    # Adding the 7 cases as samples to the prompt
     prompt = f"""
 Here are some examples of structured task summaries. Follow this format when generating the task summary:
 
@@ -98,19 +94,14 @@ Ensure the response is clear and follows the format.
 # Streamlit UI
 def main():
     st.title("Task Summary Generator (Case-based Format)")
-    st.write("Enter your tasks for today and tomorrow to generate a formatted case-based summary.")
+    st.write("Enter your tasks for today and tomorrow to generate a formatted summary.")
 
-    # Project Name(s)
-    project_name = st.text_input("Project Name(s) (e.g., CrowdGen AI, Emp Radar)", value="CrowdGen AI, Emp Radar")
+    project_name = st.text_input("Project Name(s)", value="CrowdGen AI, Emp Radar")
+    today_tasks = st.text_area("Tasks for Today", height=150)
+    tomorrow_tasks = st.text_area("Tasks for Tomorrow", height=150)
 
-    # Task inputs with pre-filled sample text
-    today_tasks = st.text_area("Tasks for Today", value=None, height=150)
-    tomorrow_tasks = st.text_area("Tasks for Tomorrow", value=None, height=150)
+    case_number = 7  # You can make this dynamic
 
-    # Auto-increment Case Number
-    case_number = 7  # You can modify this logic to count past cases if stored.
-
-    # Generate Report Button
     if st.button("Generate Report"):
         if not today_tasks.strip() or not tomorrow_tasks.strip():
             st.error("Please provide tasks for both today and tomorrow.")
@@ -118,7 +109,6 @@ def main():
             with st.spinner("Generating report..."):
                 try:
                     summary = generate_summary(case_number, today_tasks, tomorrow_tasks, project_name)
-                    print(summary)
                     st.subheader("Generated Task Summary:")
                     st.markdown(summary.replace("\n", "  \n"))
                 except Exception as e:
