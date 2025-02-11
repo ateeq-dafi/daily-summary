@@ -4,6 +4,12 @@ import openai
 from openai import OpenAI
 client = OpenAI()
 
+# Get the API key from Streamlit secrets
+api_key = st.secrets["openai"]["api_key"]
+
+# Initialize OpenAI client
+client = OpenAI(api_key=api_key)
+
 # Load API Key from environment variables
 api_key = st.secrets["ATEEQ_OPENAI_API_KEY"]
 
