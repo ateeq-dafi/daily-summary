@@ -10,9 +10,6 @@ api_key = st.secrets["openai"]["api_key"]
 # Initialize OpenAI client
 client = OpenAI(api_key=api_key)
 
-# Load API Key from environment variables
-api_key = st.secrets["ATEEQ_OPENAI_API_KEY"]
-
 # Function to generate a structured task summary
 def generate_summary(case_number, today_tasks, tomorrow_tasks, project_name):
     # Adding the 7 cases as samples to the prompt
