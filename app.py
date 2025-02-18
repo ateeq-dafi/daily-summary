@@ -108,7 +108,7 @@ def main():
 
     # Character limits
     PROJECT_NAME_LIMIT = 50
-    TASKS_LIMIT = 600
+    TASKS_LIMIT = 1000
 
     # Input fields with validation
     project_name = st.text_input("Project Name(s)", value="CrowdGen AI, Emp Radar")
