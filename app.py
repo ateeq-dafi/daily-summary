@@ -15,55 +15,55 @@ Here are some examples of structured task summaries. Follow this format when gen
 Case 1:
 Summary (CrowdGen AI):
 What I have done today?
-1. I started working on credits integration part and its done and task is assigned to QA.
-2. User profile update has been started and will be completed till tomorrow 4-5 PM.
+* I started working on credits integration part and its done and task is assigned to QA.
+* User profile update has been started and will be completed till tomorrow 4-5 PM.
 What I will do tomorrow?
-1. Continue work on User profile task and will be done till 5PM at max.
-2. I will try my best to complete admin dashboard states integration by day end.
+* Continue work on User profile task and will be done till 5PM at max.
+* I will try my best to complete admin dashboard states integration by day end.
 
 Case 2:
 Summary (CrowdGen AI):
 What I have done today?
-1. I started working on credits integration part and its done and task is assigned to QA.
-2. User profile update has been started and will be completed till tomorrow 4-5 PM.
+* I started working on credits integration part and its done and task is assigned to QA.
+* User profile update has been started and will be completed till tomorrow 4-5 PM.
 What I will do tomorrow?
-1. Continue work on User profile task and will be done till 5PM at max.
-2. I do not have any further tasks.
+* Continue work on User profile task and will be done till 5PM at max.
+* I do not have any further tasks.
 
 Case 3:
 Summary (CrowdGen AI):
 What I have done today?
-1. I started working on credits integration part and its done and task is assigned to QA.
-2. I do not have any assigned further tasks
+* I started working on credits integration part and its done and task is assigned to QA.
+* I do not have any assigned further tasks
 What I will do tomorrow?
-1. Available for new tasks/project.
+* Available for new tasks/project.
 
 Case 4:
 Summary (Emp Radar):
 What I have done today?
-1. I have done integration of user management screen. Build to test: https://app.clickup.com/t/86erf2gvw
-2. I need an understanding on Radar screen with web team.
+* I have done integration of user management screen. Build to test: https://app.clickup.com/t/86erf2gvw
+* I need an understanding on Radar screen with web team.
 What I will do tomorrow?
-1. @Johar Alam Need a meeting with web team to start new task.
-2. Meeting with client at 8:30PM @Johar Alam
+* @Johar Alam Need a meeting with web team to start new task.
+* Meeting with client at 8:30PM @Johar Alam
 
 Case 5:
 Summary (Emp Radar, CrowdGen AI):
 What I have done today?
-1. Tested User management screen and its QA passed and ready to move to production.
-2. Tested NFT screen but it has some issues reported. Can't move to production.
+* Tested User management screen and its QA passed and ready to move to production.
+* Tested NFT screen but it has some issues reported. Can't move to production.
 What I will do tomorrow?
-1. @Johar Alam Need a meeting on understanding of NFT flow for better testing.
-2. @Sohail Anwar Dummy images are used in NFT so need real images tomorrow.
+* @Johar Alam Need a meeting on understanding of NFT flow for better testing.
+* @Sohail Anwar Dummy images are used in NFT so need real images tomorrow.
 
 Case 6:
 Summary (Emp Radar, CrowdGen AI):
 What I have done today?
-1. Email delivery issues fixed for Dafilabs site on AWS.
-2. Crowdgen project deployed on staging and here is the link: https://app.clickup.com/t/86erf2gvw
+* Email delivery issues fixed for Dafilabs site on AWS.
+* Crowdgen project deployed on staging and here is the link: https://app.clickup.com/t/86erf2gvw
 What I will do tomorrow?
-1. @Johar Alam Need GCP credentials for CrowdGen.
-2. Configure ZOHO as new emails provider.
+* @Johar Alam Need GCP credentials for CrowdGen.
+* Configure ZOHO as new emails provider.
 
 Now, based on the following tasks, generate the task summary:
 
