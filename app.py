@@ -25,29 +25,20 @@ Case 2:
 Summary (CrowdGen AI):
 What I have done today?
 * I started working on credits integration part and its done and task is assigned to QA.
-* User profile update has been started and will be completed till tomorrow 4-5 PM.
-What I will do tomorrow?
-* Continue work on User profile task and will be done till 5PM at max.
-* I do not have any further tasks.
-
-Case 3:
-Summary (CrowdGen AI):
-What I have done today?
-* I started working on credits integration part and its done and task is assigned to QA.
 * I do not have any assigned further tasks
 What I will do tomorrow?
 * Available for new tasks/project.
 
-Case 4:
+Case 3:
 Summary (Emp Radar):
 What I have done today?
-* I have done integration of user management screen. Build to test: https://app.clickup.com/t/86erf2gvw
+* I have done integration of user management screen. Build to test.
 * I need an understanding on Radar screen with web team.
 What I will do tomorrow?
 * @Johar Alam Need a meeting with web team to start new task.
 * Meeting with client at 8:30PM @Johar Alam
 
-Case 5:
+Case 4:
 Summary (Emp Radar, CrowdGen AI):
 What I have done today?
 * Tested User management screen and its QA passed and ready to move to production.
@@ -55,15 +46,6 @@ What I have done today?
 What I will do tomorrow?
 * @Johar Alam Need a meeting on understanding of NFT flow for better testing.
 * @Sohail Anwar Dummy images are used in NFT so need real images tomorrow.
-
-Case 6:
-Summary (Emp Radar, CrowdGen AI):
-What I have done today?
-* Email delivery issues fixed for Dafilabs site on AWS.
-* Crowdgen project deployed on staging and here is the link: https://app.clickup.com/t/86erf2gvw
-What I will do tomorrow?
-* @Johar Alam Need GCP credentials for CrowdGen.
-* Configure ZOHO as new emails provider.
 
 Now, based on the following tasks, generate the task summary:
 
