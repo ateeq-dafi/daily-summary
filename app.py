@@ -93,7 +93,7 @@ def main():
     TASKS_LIMIT = 1000
 
     # Input fields with validation
-    project_name = st.text_input("Project Name(s)", value="CrowdGen AI, Emp Radar")
+    project_name = st.text_input("Project Name(s)", value="Emp Radar")
     if len(project_name) > PROJECT_NAME_LIMIT:
         st.error(f"Project Name should be at most {PROJECT_NAME_LIMIT} characters. Current length: {len(project_name)}")
 
