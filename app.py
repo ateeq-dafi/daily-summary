@@ -47,6 +47,7 @@ What I will do tomorrow?
 * @Johar Alam Need a meeting on understanding of NFT flow for better testing.
 * @Sohail Anwar Dummy images are used in NFT so need real images tomorrow.
 
+Note: Enhance & improve the given text by correcting any mistakes made by the user.
 Now, based on the following tasks, generate the task summary:
 
 Case {case_number}:
